@@ -24,10 +24,10 @@ client.on("messageCreate", (message) => {
 client.on("interactionCreate", async (interaction) => {
   if (interaction.isButton()){
     if(interaction.customId === "verify"){
-      interaction.member.roles.add("973004296708841482");
+      interaction.member.roles.add("Your role id");
       interaction.reply({ content: 'You are verified', ephemeral: true });
     }
   }
 })
 
-client.login(process.env.TOKEN)
+client.login("Your token)
